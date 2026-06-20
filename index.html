@@ -895,7 +895,7 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 2px;
-      background: linear-gradient(90deg, var(--violet), var(--pink), var(--gold));
+      background: linear-gradient(90deg, var(--gold), var(--gold-l));
     }
     .contact-form-wrap h3 {
       font-family: var(--font-d);
@@ -948,9 +948,9 @@
     .btn-send {
       width: 100%;
       padding: 14px 24px;
-      border-radius: var(--r-sm);
-      background: linear-gradient(135deg, var(--violet), var(--pink));
-      color: #fff;
+      border-radius: 100px;
+      background: var(--gold);
+      color: #08080d;
       font-family: var(--font);
       font-size: 0.92rem;
       font-weight: 700;
@@ -965,9 +965,9 @@
       letter-spacing: 0.01em;
     }
     .btn-send:hover {
+      background: var(--gold-l);
       transform: translateY(-2px);
-      box-shadow: 0 10px 28px rgba(108,99,255,0.35);
-      filter: brightness(1.1);
+      box-shadow: 0 10px 28px rgba(245,166,35,0.35);
     }
     .btn-send:disabled {
       opacity: 0.65;
@@ -1746,8 +1746,8 @@
 
       <!-- Contact Form (powered by Web3Forms — free, no backend needed) -->
       <div class="contact-form-wrap reveal">
-        <h3>Send a Message 💬</h3>
-        <p>Fill in the form and I'll get back to you within 24 hours.</p>
+        <h3>Send a Message</h3>
+        <p>Fill in the form and I'll get back to you shortly.</p>
 
         <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
           <!-- 🔑 REPLACE the value below with YOUR free key from https://web3forms.com -->
@@ -1789,11 +1789,11 @@
 
           <div class="form-feedback" id="formSuccess">
             <i class="fas fa-check-circle"></i>
-            Message sent! I'll reply within 24 hours. 🎉
+            Message sent.
           </div>
           <div class="form-feedback" id="formError">
             <i class="fas fa-exclamation-circle"></i>
-            Something went wrong. Please try emailing me directly.
+            Something went wrong. Please email me directly.
           </div>
         </form>
 
